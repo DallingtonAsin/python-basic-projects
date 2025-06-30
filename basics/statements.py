@@ -187,8 +187,39 @@ volume = math.pi*r*r*h
 print("The surface area is ", round(surface_area, 2))
 print("The volume is ", round(volume, 2))
 
+# bread_weight (float), serving_size (float), and num_guests (int)
 
+bread_weight = float(input("Enter bread weight: "))
+serving_size = float(input("Enter serving size: "))
+num_guests = int(input("Enter number of guests: "))
 
+# Calculate number of loaves.
+loaves = num_guests * serving_size / bread_weight
+print("For", num_guests, "people, you will need",
+      loaves, "loaves of bread:")
+print()
 
+# Calculate the ingredients.
+print(" ", 1.5 * loaves, "teaspoons instant yeast")
+print(" ", 1.5 * loaves, "teaspoons salt")
+print(" ", 1.5 * loaves, "teaspoons sugar")
+print(" ", 2.5 * loaves, "cups all-purpose flour")
+print(" ", 2.0 * loaves, "cups sourdough starter")
+print(" ", 0.5 * loaves, "cups lukewarm water")
+print()
 
+bill_amount = float(input("Enter bill amount: "))
+tip_percent = float(input("Percentage to tip: "))
+no_of_people  = int(input("Number of people: "))
 
+tip_amount = tip_percent * 0.01 * bill_amount
+total_amount = bill_amount + tip_amount
+
+tip_per_person = tip_amount / no_of_people
+total_per_person = total_amount / no_of_people
+
+print("Tip amount: $", round(tip_amount, 2), sep="")
+print("Total amount: $", round(total_amount, 2), sep="")
+print("Tip per person: $", round(tip_per_person, 2), sep="")
+print("Total per person: $", round(total_per_person, 2), sep="")
+print()
