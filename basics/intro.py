@@ -102,7 +102,4 @@ item2 = input("Item #2: ")
 
 """
 This is a docstring which is more like a multi-comem
-
 """
-
-
