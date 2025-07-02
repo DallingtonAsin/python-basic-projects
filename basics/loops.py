@@ -1,3 +1,40 @@
+from sympy.physics.units import length
+
+# Exercises
+
+# Reverse an integer
+int_val = 76542
+val_str = str(int_val)
+reversed_str = ""
+
+for s in range(len(val_str) - 1, -1, -1):
+    reversed_str += val_str[s]
+
+reversed_int = int(reversed_str)
+print(f"{int_val} when reversed yields {reversed_int}")
+
+
+
+
+# Factorial
+
+num_val = 6
+factorial = 1
+
+if num_val < 0:
+    print("Factorial does not exist for negative numbers")
+elif num_val == 0:
+    print("Factorial of 0 is 1")
+else:
+    for i in range(num_val, 1, -1):
+        factorial *= i
+
+print(f"The factorial of {num_val} is {factorial}")
+
+
+
+
+
 # While loop
 
 i = 1
