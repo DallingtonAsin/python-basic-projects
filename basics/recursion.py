@@ -33,7 +33,6 @@ def fibonacci(n):
             return fibo_series
 
 
-
 print(fibonacci(10))
 
 # summation of numbers from 0 to n
