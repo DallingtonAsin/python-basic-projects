@@ -175,6 +175,7 @@ print(acct_a > acct_b)
 print(acct_a == acct_b)
 print(acct_a < acct_b)
 
+
 class ExerciseLog:
 
     def __init__(self, e_type, duration):

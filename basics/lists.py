@@ -48,7 +48,7 @@ num_list = [38, 92, 23, 16, 10, 5, 100]
 print(num_list)
 
 # num_list.sort()
-# print(num_list)
+print(num_list)
 print("Sorted list", sorted(num_list))
 
 num_list.reverse()
