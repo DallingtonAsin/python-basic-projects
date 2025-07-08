@@ -4,8 +4,8 @@ import time
 start = time.time()
 
 # Code to measure
-list = ["Dallington", "Peter", "John", "Isaac"]
-for name in list:
+names = ["James", "Peter", "John", "Isaac"]
+for name in names:
     print(name)
 
 # Record end time

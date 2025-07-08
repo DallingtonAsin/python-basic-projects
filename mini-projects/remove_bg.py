@@ -3,8 +3,8 @@ from PIL import Image
 
 
 try: 
-    input_path="/home/dallington/Desktop/Chevening/pic.jpg"
-    output_path="/home/dallington/Desktop/Chevening/formatted/pic.png"
+    input_path="../public/images/cat.jpg"
+    output_path="../public/images/cat.png"
     
     inp = Image.open(input_path)
     output = remove(inp)
