@@ -144,6 +144,13 @@ print(df)
 df = df.dropna()
 print(df)
 
+# pie chart
+labels = ["Python", "C++", "Java", "Javascript", "PHP"]
+sizes = [50, 25, 23, 20, 15]
+plt.pie(sizes, labels=labels, autopct="%1.1f%%", counterclock=False, startangle=105)
+plt.title("Pie chart showing % of programmers per programming language")
+plt.show()
+
 # Bar graph
 courses = ["Course A", "Course B", "Course C"]
 scores = [20, 45, 78]
