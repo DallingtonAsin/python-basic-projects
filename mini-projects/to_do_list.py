@@ -1,15 +1,15 @@
-from topics.modules.to_do_list import ToDoList
+from topics.modules.to_do_list import ToDoList, display_menu, add_tasks
 
 task_list = []
 to_do_list = ToDoList()
 
 while True:
-    to_do_list.display_menu()
+    display_menu()
 
     try:
         choice = int(input("Enter the choice: "))
         if choice == 1:
-            to_do_list.add_tasks(task_list)
+            add_tasks(task_list)
         elif choice == 2:
             to_do_list.view_tasks(task_list)
         elif choice == 3:

@@ -1,3 +1,21 @@
+def display_menu():
+    """
+
+    :return:
+    """
+    print("Menu\n.......\n1. Add task\n2. Display tasks\n3. Save tasks\n4. Load tasks\n5. Mark task done\n6. Exit")
+
+
+def add_tasks(tasks):
+    """
+
+    :param tasks:
+    :return:
+    """
+    task = input("Enter task description: ")
+    tasks.append(task)
+    print("Task added successfully")
+
 
 class ToDoList:
     """
@@ -38,18 +56,6 @@ class ToDoList:
                 all_tasks.append(f"{i + 1}. {task}")
 
         return all_tasks
-
-
-    def add_tasks(self, tasks):
-        """
-
-        :param tasks:
-        :return:
-        """
-        task = input("Enter task description: ")
-        tasks.append(task)
-        print("Task added successfully")
-
 
     def view_tasks(self, tasks):
         """
@@ -136,11 +142,3 @@ class ToDoList:
                 self.save_tasks(new_tasks)
             else:
                 print("Invalid task number")
-
-
-    def display_menu(self):
-        """
-
-        :return:
-        """
-        print("Menu\n.......\n1. Add task\n2. Display tasks\n3. Save tasks\n4. Load tasks\n5. Mark task done\n6. Exit")
