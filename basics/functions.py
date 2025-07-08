@@ -101,7 +101,7 @@ def print_scores(test_scores, bonus):
     for score in test_scores:
         print(f"{score} would be updated to {score + bonus}")
 
-print_scores({'student_id':67, 68, 72, 71, 69], 10)
+print_scores([67, 68, 72, 71, 69], 10)
 
 
 def calc_sqft(length, width):
