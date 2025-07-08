@@ -18,6 +18,12 @@ while True:
             to_do_list.load_tasks()
         elif choice == 5:
             to_do_list.mark_task_done(task_list)
+        elif choice == 6:
+            to_do_list.get_word_length()
+        elif choice == 7:
+            to_do_list.get_character_length()
+        elif choice == 8:
+            exit(0)
         else:
             print("Error: Invalid choice")
             continue

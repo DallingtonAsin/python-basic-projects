@@ -3,7 +3,7 @@ def display_menu():
 
     :return:
     """
-    print("Menu\n.......\n1. Add task\n2. Display tasks\n3. Save tasks\n4. Load tasks\n5. Mark task done\n6. Exit")
+    print("Menu\n.......\n1. Add task\n2. Display tasks\n3. Save tasks\n4. Load tasks\n5. Mark task done\n6. Count words\n7. Count characters\n8. Exit")
 
 
 def add_tasks(tasks):
@@ -142,3 +142,17 @@ class ToDoList:
                 self.save_tasks(new_tasks)
             else:
                 print("Invalid task number")
+
+    def get_character_length(self):
+        with open(self.work_directory) as file:
+            content = file.read()
+        print(f"Characters: {len(content)}")
+
+    def get_word_length(self):
+        with open(self.work_directory) as file:
+            count = 0
+            for line in file.readlines():
+                word_list = line.strip("\n").split(" ")
+                count += len(word_list)
+
+        print(f"Words: {count}")
