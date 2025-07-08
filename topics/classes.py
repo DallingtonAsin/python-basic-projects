@@ -6,8 +6,8 @@
 5. Using modules with classes
 
 """
-from basics.modules.area.classes import Triangle
-from basics.modules.area.classes import Rectangle as Rct
+from topics.modules.area.classes import Triangle
+from topics.modules.area.classes import Rectangle as Rct
 
 class Student:
     def __init__(self, name, age):

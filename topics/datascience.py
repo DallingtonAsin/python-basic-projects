@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+directory = "./datasets"
+
 numbers = [[-1, 2, 0], [5,7, 4], [8, 3, 1]]
 arr1 = np.array(numbers)
 print(arr1)
@@ -49,7 +51,7 @@ print(dt2)
 
 # Dataframe from a csv
 
-data = pd.read_csv("/home/dallington/Desktop/py/student.csv")
+data = pd.read_csv(f"{directory}//student.csv")
 print(data)
 print(data.loc[0, "student_id"])
 print(data.iloc[3, 1])
@@ -57,7 +59,7 @@ print(data.iloc[3, 1])
 
 # Dataframe from excel
 try:
-    data = pd.read_csv("/home/dallington/Desktop/py/student.xlsx")
+    data = pd.read_csv(f"{directory}//student.xlsx")
     print(data)
 except FileNotFoundError as err:
     print("File not Found", err)
@@ -93,7 +95,7 @@ print()
 
 print(df["Season"].unique()) # Returns an array of unique values in a column when called on a column.
 
-student_df = pd.read_csv("/home/dallington/Desktop/py/student.csv")
+student_df = pd.read_csv(f"{directory}//student.csv")
 print(student_df)
 print(student_df.loc[0, "student_id"])
 print(student_df.iloc[3, 1])
