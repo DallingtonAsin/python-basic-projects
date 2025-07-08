@@ -1,4 +1,4 @@
-from topics.modules.to_do_list import ToDoList, display_menu, add_tasks
+from modules.to_do_list import ToDoList, display_menu, add_tasks
 
 task_list = []
 to_do_list = ToDoList()

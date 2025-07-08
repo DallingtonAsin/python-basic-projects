@@ -1,5 +1,5 @@
-from topics.modules.area import circle, rectangle
-import basics.modules.colors as colors
+from modules.area import circle, rectangle
+import modules.colors as colors
 from datetime import date
 
 
