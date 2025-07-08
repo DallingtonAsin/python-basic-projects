@@ -2,7 +2,7 @@ import csv
 
 from numba.cuda import const
 
-directory = "./datasets"
+directory = "../datasets"
 file_obj = open(f"{directory}/file.txt")
 
 # using read

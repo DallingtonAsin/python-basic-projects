@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-directory = "./datasets"
+directory = "../datasets"
 
 numbers = [[-1, 2, 0], [5,7, 4], [8, 3, 1]]
 arr1 = np.array(numbers)
