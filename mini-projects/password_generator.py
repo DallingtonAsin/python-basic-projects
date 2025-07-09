@@ -5,6 +5,7 @@ import random
 def display_menu():
     print(f'\n{"."*7}Password Choice Type{"."*7}\n1.Letters\n2.Digits\n3.Special characters\n4.Letters and special characters\n5.Letters and digits\n6.Letters, special characters, and digits\n7.Exit\n')
 
+
 def generate_password(choice):
 
     options = {
@@ -16,7 +17,6 @@ def generate_password(choice):
         6: string.ascii_letters + string.digits + string.punctuation
     }
     return options[choice]
-
 
 
 while True:
