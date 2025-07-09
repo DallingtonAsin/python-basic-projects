@@ -22,7 +22,6 @@ def generate_password(choice):
 while True:
 
     display_menu()
-    password_list = []
 
     try:
         user_choice = int(input("Enter your choice: "))
@@ -31,6 +30,8 @@ while True:
                 length = int(input("Enter length of password: "))
 
                 character_list = generate_password(user_choice)
+                password_list = []
+
                 for i in range(length):
                     random_char = random.choice(character_list)
                     password_list.append(random_char)
