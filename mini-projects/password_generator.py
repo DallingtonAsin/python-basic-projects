@@ -35,9 +35,9 @@ while True:
                 for i in range(length):
                     random_char = random.choice(character_list)
                     password_list.append(random_char)
-
                 password = "".join(password_list)
                 print(f"Generated password: {password}")
+
             except ValueError as ve:
                 print("Error:", ve)
         elif user_choice == 7:
